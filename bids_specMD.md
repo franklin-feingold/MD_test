@@ -175,71 +175,54 @@ metadata](#heading=h.yic0v7leqtf3)
 >> [8.3.3 Task (including resting state) imaging
 data](#heading=h.r8mrcau3kkcq)  
 >>> [8.3.3.1 Example:](#heading=h.1q8p210od2f)  
+
 >> [8.3.4 Diffusion imaging data](#heading=h.xfuiufnb319)  
 >>> [8.3.4.1 bvec example:](#heading=h.r9czn8f0t58k)
+>>> [8.3.4.2 bval example:](#heading=h.e948atq2ku1n)
+>>> [8.3.4.3 JSON example:](#heading=h.hxcaki8xqrp6)
 
-[8.3.4.2 bval example:](#heading=h.e948atq2ku1n)
-
-[8.3.4.3 JSON example:](#heading=h.hxcaki8xqrp6)
-
-[8.3.5 Fieldmap data](#heading=h.fcegd01wpsf8)
-
-[8.3.5.1 Case 1: Phase difference image and at least one magnitude
+>> [8.3.5 Fieldmap data](#heading=h.fcegd01wpsf8)
+>>> [8.3.5.1 Case 1: Phase difference image and at least one magnitude
 image](#heading=h.fexn37cr2yum)
-
-[8.3.5.2 Case 2: Two phase images and two magnitude
+>>> [8.3.5.2 Case 2: Two phase images and two magnitude
 images](#heading=h.dytrqt3rfo2y)
-
-[8.3.5.3 Case 3: A single, real fieldmap image (showing the field
+>>> [8.3.5.3 Case 3: A single, real fieldmap image (showing the field
 inhomogeneity in each voxel)](#heading=h.9wqqfa1lqctc)
-
-[8.3.5.4 Case 4: Multiple phase encoded directions
+>>> [8.3.5.4 Case 4: Multiple phase encoded directions
 (“pepolar”)](#heading=h.6gef31kvsx0l)
 
-[8.4 Magnetoencephalography (MEG)](#heading=h.y1yw5l9a04g2)
-
-[8.4.1 MEG recording data](#heading=h.ln9qkltewtqa)
-
-[8.4.1.1 Sidecar JSON document
+>[8.4 Magnetoencephalography (MEG)](#heading=h.y1yw5l9a04g2)
+>> [8.4.1 MEG recording data](#heading=h.ln9qkltewtqa)
+>>>[8.4.1.1 Sidecar JSON document
 (\*\_meg.json)](#heading=h.wmua3ist46l2)
 
-[8.4.2 Channels description table
-(\*\_channels.tsv)](#heading=h.2ng8e4h6db4p)
+>> [8.4.2 Channels description table
+(\*\_channels.tsv)](#heading=h.2ng8e4h6db4p)  
+>> [8.4.3 Coordinate System JSON document
+(\*\_coordsystem.json)](#heading=h.vz4gpcbftsuu)  
+>> [8.4.4 Photos of the anatomical landmarks and/or head localization
+coils  (\*\_photo.jpg)](#heading=h.li6xt1s6zgjs)  
+>> [8.4.5 3-D head point /electrode locations file
+(\*\_headshape.<manufacturer_specific_format>)](#heading=h.jrc7wyqvlzpp)  
+>> [8.4.6 Empty-room files (sub-emptyroom)](#heading=h.i7qifoac3vgf)
 
-[8.4.3 Coordinate System JSON document
-(\*\_coordsystem.json)](#heading=h.vz4gpcbftsuu)
+> [8.5 Task events](#heading=h.daip42kp5ndz)
+>> [8.5.1 Example:](#heading=h.akoyjl6f4i1e)
+>> [8.5.2 Example:](#heading=h.gsp1xuuo09tb)
+>> [8.5.3 Example:](#heading=h.8leve31f2d03)
 
-[8.4.4 Photos of the anatomical landmarks and/or head localization
-coils  (\*\_photo.jpg)](#heading=h.li6xt1s6zgjs)
-
-[8.4.5 3-D head point /electrode locations file
-(\*\_headshape.<manufacturer_specific_format>)](#heading=h.jrc7wyqvlzpp)
-
-[8.4.6 Empty-room files (sub-emptyroom)](#heading=h.i7qifoac3vgf)
-
-[8.5 Task events](#heading=h.daip42kp5ndz)
-
-[8.5.1 Example:](#heading=h.akoyjl6f4i1e)
-
-[8.5.2 Example:](#heading=h.gsp1xuuo09tb)
-
-[8.5.3 Example:](#heading=h.8leve31f2d03)
-
-[8.6 Physiological and other continuous
+> [8.6 Physiological and other continuous
 recordings](#heading=h.usbya6fhiy5v)
+>> [8.6.1 Example:](#heading=h.mtd2764i6ii1)
 
-[8.6.1 Example:](#heading=h.mtd2764i6ii1)
-
-[8.7 Behavioral experiments (with no
+> [8.7 Behavioral experiments (with no
 MRI)](#heading=h.cpt8jqa5g0y7)
 
-[8.8 Scans file](#heading=h.rw11qtsldsuw)
+> [8.8 Scans file](#heading=h.rw11qtsldsuw)
+>> [8.8.1 Example:](#heading=h.xtaf7kerpvji)
 
-[8.8.1 Example:](#heading=h.xtaf7kerpvji)
-
-[8.9 Participant file](#heading=h.pi5iigxxt8vy)
-
-[8.9.1 participants.tsv example:](#heading=h.rsax9zcpo17t)
+> [8.9 Participant file](#heading=h.pi5iigxxt8vy)
+>> [8.9.1 participants.tsv example:](#heading=h.rsax9zcpo17t)
 
 [9 Longitudinal studies with multiple sessions
 (visits)](#heading=h.5c3b4lpzj5cn)
@@ -503,17 +486,35 @@ Tabular data MUST be saved as tab delimited values (.tsv) files, i.e. csv files 
 ### 4.2.1 Example:[\[1\]](#ftnt1){#ftnt_ref1}^ 
 
 | onset | duration | response\_time | correct | stop\_trial | go\_trial |
-| :--- | :---  | :--- |
+| --- | ---  | --- |
 | 200 | 200 | 0 | n/a | n/a | n/a |
 
 Tabular files MAY be optionally accompanied by a simple data dictionary in a JSON format (see below). The data dictionaries MUST have the same name as their corresponding tabular files but with .json extensions. Each entry in the data dictionary has a name corresponding to a column name and the following fields:
 
-| LongName | Long (unabbreviated) name of the column. |
-| --- | --- |
-| Description | Description of the column. |
-| Levels | For  categorical variables: a dictionary of possible values (keys) and their descriptions (values). |
-| Units | Measurement units.  [`&lt;`prefix symbol`&gt;`] `&lt;`unit symbol`&gt;` format following the SI standard is RECOMMENDED (see Appendix V). |
-| TermURL | URL pointing to a formal definition of this type of data in an ontology available on the web. | 
+<table>
+  <tbody>
+    <tr>
+      <td>LongName</td>
+      <td>Long (unabbreviated) name of the column.</td>
+    </tr>
+    <tr>
+      <td>Description</td>
+      <td>Description of the column.</td>
+    </tr>
+    <tr>
+      <td>Levels</td>
+      <td>For  categorical variables: a dictionary of possible values (keys) and their descriptions (values).</td>
+    </tr>
+    <tr>
+      <td>Units</td>
+      <td>Measurement units.  [&gt;prefix symbol&gt;] &lt;unit symbol&gt; format following the SI standard is RECOMMENDED (see Appendix V).</td>
+    </tr>
+    <tr>
+      <td>TermURL</td>
+      <td>URL pointing to a formal definition of this type of data in an ontology available on the web.</td>
+    </tr>  
+  </tbody>
+</table>
 
 ### 4.2.2 Example:
 
