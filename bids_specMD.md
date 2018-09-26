@@ -1,4 +1,5 @@
 The Brain Imaging Data Structure (BIDS) Specification
+===============
 
 version 1.1.1 (working copy)
 
@@ -151,6 +152,7 @@ metadata](#heading=h.yic0v7leqtf3)
 > [4.2 Tabular files](#heading=h.r85srnfs3y24)  
 >> [4.2.1 Example:](#heading=h.fpjccp3z8lxv)  
 >> [4.2.2 Example:](#heading=h.o9t9l483hwh7)  
+
 > [4.3 Key/value files (dictionaries)](#heading=h.c75m812a750g)  
 >> [4.3.1 Example:](#heading=h.str6bi80689r)
 
