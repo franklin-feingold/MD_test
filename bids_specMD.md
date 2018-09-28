@@ -1,8 +1,8 @@
 The Brain Imaging Data Structure (BIDS) Specification
 ===============
 
-<center>version 1.1.1 (working copy)  
-Available under the CC-BY 4.0 International license.</center>
+<center>version 1.1.1 (working copy)</center>  
+<center>Available under the CC-BY 4.0 International license.</center>
 
 Browse example datasets:  
 [https://github.com/INCF/BIDS-examples](https://github.com/INCF/BIDS-examples)
