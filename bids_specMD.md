@@ -138,7 +138,7 @@ Download example datasets:
 
 [3 Introduction](#heading=h.ehs58l1sp5l0)  
 > [3.1 Motivation](#heading=h.nn0wr5qmclie)  
-> [3.2 Definitions](#heading=h.ld293tqw9us4)
+> [3.2 Definitions](#heading=h.ld293tqw9us4)  
 > [3.3 Compulsory, optional, and additional data and
 metadata](#heading=h.yic0v7leqtf3)  
 > [3.4 Source vs. raw vs. derived data](#heading=h.juzchuxblakl)  
@@ -177,8 +177,8 @@ data](#heading=h.r8mrcau3kkcq)
 >>> [8.3.3.1 Example:](#heading=h.1q8p210od2f)  
 
 >> [8.3.4 Diffusion imaging data](#heading=h.xfuiufnb319)  
->>> [8.3.4.1 bvec example:](#heading=h.r9czn8f0t58k)
->>> [8.3.4.2 bval example:](#heading=h.e948atq2ku1n)
+>>> [8.3.4.1 bvec example:](#heading=h.r9czn8f0t58k)  
+>>> [8.3.4.2 bval example:](#heading=h.e948atq2ku1n)  
 >>> [8.3.4.3 JSON example:](#heading=h.hxcaki8xqrp6)
 
 >> [8.3.5 Fieldmap data](#heading=h.fcegd01wpsf8)  
@@ -206,10 +206,10 @@ coils  (\*\_photo.jpg)](#heading=h.li6xt1s6zgjs)
 (\*\_headshape.<manufacturer_specific_format>)](#heading=h.jrc7wyqvlzpp)  
 >> [8.4.6 Empty-room files (sub-emptyroom)](#heading=h.i7qifoac3vgf)
 
-> [8.5 Task events](#heading=h.daip42kp5ndz)
->> [8.5.1 Example:](#heading=h.akoyjl6f4i1e)
->> [8.5.2 Example:](#heading=h.gsp1xuuo09tb)
->> [8.5.3 Example:](#heading=h.8leve31f2d03)
+> [8.5 Task events](#heading=h.daip42kp5ndz)  
+>> [8.5.1 Example:](#heading=h.akoyjl6f4i1e)  
+>> [8.5.2 Example:](#heading=h.gsp1xuuo09tb)  
+>> [8.5.3 Example:](#heading=h.8leve31f2d03)  
 
 > [8.6 Physiological and other continuous
 recordings](#heading=h.usbya6fhiy5v)
@@ -313,7 +313,8 @@ BIDS in its current form is designed to harmonize and describe raw (unprocessed 
 This specification currently does not go into details of recommending a particular naming scheme for including different types of source data (raw event logs, parameter files, etc. before conversion to BIDS) and data derivatives (correlation maps, brain masks, contrasts maps, etc.). However, in the case that these data are to be included:
 
 1.  These data MUST be kept in separate “sourcedata” and “derivatives”
-    folders each with a similar folder structure as presented below for the BIDS-managed data. For example: derivatives/fmriprep/sub-01/ses-pre/sub-01_ses-pre_mask.nii.gz or sourcedata/sub-01/ses-pre/func/sub-01_ses-pre_task-rest_bold.dicom.tgz or sourcedata/sub-01/ses-pre/func/MyEvent.sce.
+    folders each with a similar folder structure as presented below for the BIDS-managed data. For example:  
+    derivatives/fmriprep/sub-01/ses-pre/sub-01_ses-pre_mask.nii.gz or sourcedata/sub-01/ses-pre/func/sub-01_ses-pre_task-rest_bold.dicom.tgz or sourcedata/sub-01/ses-pre/func/MyEvent.sce.
 2.  A README file SHOULD be found at the root of the “sourcedata” or the
     “derivatives” folder (or both). This file should describe the nature of the raw data or the derived data. In the case of the existence of a “derivatives” folder, we RECOMMEND including details about the software stack and settings used to generate the results. Inclusion of non-imaging objects that improve reproducibility are encouraged (scripts, settings files, etc.).
 3.  We RECOMMEND including the PDF print-out with the actual sequence
@@ -322,11 +323,10 @@ This specification currently does not go into details of recommending a particul
 3.5 The Inheritance Principle
 ---------------------------------
 
-Any metadata file (.json, .bvec, .tsv, etc.) may be defined at any directory level, but no more than one applicable file may be defined at a given level (Example 1).  The values from the top level are inherited by all lower levels unless they are overridden by a file at the lower level. For example, sub-\*\_task-rest\_bold.json may be specified at the participant level, setting TR to a specific value. If one of the runs has a different TR than the one specified in that file, another sub*\_task-rest\_bold.json file can be placed within that specific series directory specifying the TR for that specific run.
-
-There is no notion of “unsetting” a key/value pair. For example if there is a JSON file corresponding to particular participant/run defining a key/value and there is a JSON file on the root level of the dataset that does not define this key/value it will not be “unset” for all subjects/runs.
-
-Files for a particular participant can exist only at participant level directory, i.e /dataset/sub-\*[/ses-\*]/sub-\*\_T1w.json. Similarly, any  file that is not specific to a participant is to be declared only at top level of dataset for eg: task-sist\_bold.json must be placed under /dataset/task-sist\_bold.json
+Any metadata file (.json, .bvec, .tsv, etc.) may be defined at any directory level, but no more than one applicable file may be defined at a given level (Example 1).  The values from the top level are inherited by all lower levels unless they are overridden by a file at the lower level. For example, sub-\*\_task-rest\_bold.json may be specified at the participant level, setting TR to a specific value. If one of the runs has a different TR than the one specified in that file, another sub*\_task-rest\_bold.json file can be placed within that specific series directory specifying the TR for that specific run.  
+There is no notion of “unsetting” a key/value pair. For example if there is a JSON file corresponding to particular participant/run defining a key/value and there is a JSON file on the root level of the dataset that does not define this key/value it will not be “unset” for all subjects/runs.  
+Files for a particular participant can exist only at participant level directory, i.e  
+/dataset/sub-\*[/ses-\*]/sub-\*\_T1w.json. Similarly, any  file that is not specific to a participant is to be declared only at top level of dataset for eg: task-sist\_bold.json must be placed under /dataset/task-sist\_bold.json
 
 Example 1: Two JSON files at same level that are applicable for NIfTI
 file.
@@ -519,17 +519,17 @@ NIfTI header.
 
 Tabular data MUST be saved as tab delimited values (.tsv) files, i.e. csv files where commas are replaced by tabs. Tabs MUST  be true tab characters and MUST NOT be a series of space characters. Each TSV file MUST start with a header line listing the names of all columns (with the exception of physiological and other continuous acquisition data - see below for details). Names MUST be separated with tabs. String values containing tabs MUST be escaped using double quotes. Missing and non-applicable values MUST be coded as “n/a”.
 
-### 4.2.1 Example:[\[1\]](#ftnt1){#ftnt_ref1}^
+### 4.2.1 Example:
 
 <table>
   <tbody>
     <tr>
       <td>onset</td>
       <td>duration</td>
-      <td>response\_time</td>
+      <td>response_time</td>
       <td>correct</td>
-      <td>stop\_trial</td>
-      <td>go\_trial</td>
+      <td>stop_trial</td>
+      <td>go_trial</td>
     </tr>
     <tr>
       <td>200</td>
@@ -560,7 +560,7 @@ Tabular files MAY be optionally accompanied by a simple data dictionary in a JSO
     </tr>
     <tr>
       <td>Units</td>
-      <td>Measurement units.  [&gt;prefix symbol&gt;] &lt;unit symbol&gt; format following the SI standard is RECOMMENDED (see Appendix V).</td>
+      <td>Measurement units.  [&lt;prefix symbol&gt;] &lt;unit symbol&gt; format following the SI standard is RECOMMENDED (see Appendix V).</td>
     </tr>
     <tr>
       <td>TermURL</td>
