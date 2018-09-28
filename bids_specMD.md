@@ -656,9 +656,9 @@ section:
         - sub-control01\_task-nback\_physio.tsv.gz  
         - sub-control01\_task-nback\_physio.json  
         - sub-control01\_task-nback\_sbref.nii.gz  
-    -    dwi  
+    -   dwi  
         - sub-control01\_dwi.nii.gz  
-        - sub-control01\_dwi.bval  
+        - sub-control01\_dwi.bval    
         - sub-control01\_dwi.bvec  
     -   fmap  
         - sub-control01\_phasediff.nii.gz  
@@ -956,14 +956,14 @@ MR Data described in  sections 8.3.x share the following RECOMMENDED metadata fi
 
 -   Anatomical landmarks (useful for multimodal co-registration with MEG, (S)EEG, TMS, etc.)
 
-    <table>
-      <tbody>
-        <tr>
-          <td>AnatomicalLandmarkCoordinates</td>
-          <td>RECOMMENDED. Key:value pairs of any number of additional anatomical landmarks and their coordinates in voxel units (where first voxel has index 0,0,0) relative to the associated anatomical MRI, (e.g. {"AC": [127,119,149], "PC": [128,93,141], "IH": [131,114,206]}, or {"NAS": [127,213,139], "LPA": [52,113,96], "RPA": [202,113,91]}).</td>
-        </tr>
-      </tbody>
-    </table>
+<table>
+  <tbody>
+    <tr>
+      <td>AnatomicalLandmarkCoordinates</td>
+      <td>RECOMMENDED. Key:value pairs of any number of additional anatomical landmarks and their coordinates in voxel units (where first voxel has index 0,0,0) relative to the associated anatomical MRI, (e.g. {"AC": [127,119,149], "PC": [128,93,141], "IH": [131,114,206]}, or {"NAS": [127,213,139], "LPA": [52,113,96], "RPA": [202,113,91]}).</td>
+    </tr>
+  </tbody>
+</table>
 
 -   Institution information
 
