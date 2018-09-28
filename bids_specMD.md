@@ -1021,7 +1021,9 @@ Anatomical (structural) data acquired for that participant. Currently supported 
     <tr>
       <td>T1 Rho map</td>
       <td>T1rho</td>
-      <td>Quantitative T1rho brain imaging [http://www.ncbi.nlm.nih.gov/pubmed/24474423](https://www.ncbi.nlm.nih.gov/pubmed/24474423)   [http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4346383/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4346383/)</td>
+      <td>Quantitative T1rho brain imaging  
+       http://www.ncbi.nlm.nih.gov/pubmed/24474423  
+       http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4346383/</td>
     </tr>
     <tr>
       <td>T1 map</td>
@@ -1034,9 +1036,9 @@ Anatomical (structural) data acquired for that participant. Currently supported 
       <td>quantitative T2 map</td>
     </tr>
     <tr>
-      <td>T2<sup>\*</sup></td>
+      <td>T2<sup>*</sup></td>
       <td>T2star</td>
-      <td>High resolution T2<sup>\*</sup> image</td>
+      <td>High resolution T2<sup>*</sup> image</td>
     </tr>
     <tr>
       <td>FLAIR</td>
@@ -1061,7 +1063,7 @@ Anatomical (structural) data acquired for that participant. Currently supported 
     <tr>
       <td>Combined PD/T2</td>
       <td>PDT2</td>
-      <td>Long (unabbreviated) name of the column.</td>
+      <td></td>
     </tr>
     <tr>
       <td>Inplane T1</td>
@@ -1137,7 +1139,7 @@ Required fields:
   <tbody>
     <tr>
       <td>RepetitionTime</td>
-      <td>REQUIRED. The time in seconds between the beginning of an acquisition of one volume and the beginning of acquisition of the volume following it (TR). Please note that this definition includes time between scans (when no data has been acquired) in case of sparse acquisition schemes. This value needs to be consistent with the ‘pixdim[4]’ field (after accounting for units stored in ‘xyzt\_units’ field) in the NIfTI header. This field is mutually exclusive with VolumeTiming and is derived from DICOM Tag 0018, 0080 and converted to seconds.</td>
+      <td>REQUIRED. The time in seconds between the beginning of an acquisition of one volume and the beginning of acquisition of the volume following it (TR). Please note that this definition includes time between scans (when no data has been acquired) in case of sparse acquisition schemes. This value needs to be consistent with the ‘pixdim[4]’ field (after accounting for units stored in ‘xyzt_units’ field) in the NIfTI header. This field is mutually exclusive with VolumeTiming and is derived from DICOM Tag 0018, 0080 and converted to seconds.</td>
     </tr>
     <tr>
       <td>VolumeTiming</td>
@@ -1160,11 +1162,11 @@ Other RECOMMENDED metadata
   <tbody>
     <tr>
       <td>NumberOfVolumesDiscardedByScanner</td>
-      <td>RECOMMENDED. Number of volumes ("dummy scans") discarded by the scanner (as opposed to those discarded by the user post hoc) before saving the imaging file. For example, a sequence that automatically discards the first 4 volumes before saving would have this field as 4. A sequence that doesn't discard dummy scans would have this set to 0. Please note that the onsets recorded in the \_event.tsv file should always refer to the beginning of the acquisition of the first volume in the corresponding imaging file - independent of the value of NumberOfVolumesDiscardedByScanner field.</td>
+      <td>RECOMMENDED. Number of volumes ("dummy scans") discarded by the scanner (as opposed to those discarded by the user post hoc) before saving the imaging file. For example, a sequence that automatically discards the first 4 volumes before saving would have this field as 4. A sequence that doesn't discard dummy scans would have this set to 0. Please note that the onsets recorded in the _event.tsv file should always refer to the beginning of the acquisition of the first volume in the corresponding imaging file - independent of the value of NumberOfVolumesDiscardedByScanner field.</td>
     </tr>
     <tr>
       <td>NumberOfVolumesDiscardedByUser</td>
-      <td>RECOMMENDED. Number of volumes ("dummy scans") discarded by the user before including the file in the dataset. If possible, including all of the volumes is strongly recommended. Please note that the onsets recorded in the \_event.tsv file should always refer to the beginning of the acquisition of the first volume in the corresponding imaging file - independent of the value of NumberOfVolumesDiscardedByUser field.</td>
+      <td>RECOMMENDED. Number of volumes ("dummy scans") discarded by the user before including the file in the dataset. If possible, including all of the volumes is strongly recommended. Please note that the onsets recorded in the _event.tsv file should always refer to the beginning of the acquisition of the first volume in the corresponding imaging file - independent of the value of NumberOfVolumesDiscardedByUser field.</td>
     </tr>
     <tr>
       <td>DelayTime</td>
@@ -1221,7 +1223,7 @@ sub-control01/
 &nbsp;&nbsp; "ParallelReductionFactorInPlane": 2,  
 &nbsp;&nbsp; "PhaseEncodingDirection": "j",  
 &nbsp;&nbsp; "InstitutionName": "Stanford University",  
-&nbsp;&nbsp; "InstitutionAddress: "450 Serra Mall, Stanford, CA 94305-2004, USA",  
+&nbsp;&nbsp; "InstitutionAddress": "450 Serra Mall, Stanford, CA 94305-2004, USA",  
 &nbsp;&nbsp; "DeviceSerialNumber": "11035"  
 }
 
@@ -1342,7 +1344,7 @@ sub-&lt;participant\_label&gt;/[ses-&lt;session\_label&gt;/]
 >> sub-&lt;label&gt;[\_ses-&lt;session\_label&gt;][\_acq-&lt;label&gt;]\_dir-&lt;dir\_label&gt;[\_run-&lt;run\_index&gt;]\_epi.nii[.gz]  
 >> sub-&lt;label&gt;[\_ses-&lt;session\_label&gt;][\_acq-&lt;label&gt;]\_dir-&lt;dir\_label&gt;[\_run-&lt;run\_index&gt;]\_epi.json  
 
-The phase-encoding polarity (PEpolar) technique combines two or more Spin Echo EPI scans with different phase encoding directions to estimate the underlying inhomogeneity/deformation map. Examples of tools using this kind of images are FSL TOPUP, AFNI 3dqwarp and SPM. In such a case, the phase encoding direction is specified in the corresponding JSON file as one of: “i”, “j”, “k”, “i-”, “j-, “k-”. For these differentially phase encoded sequences, one also needs to specify the Total Readout Time defined as the time (in seconds) from the center of the first echo to the center of the last echo (aka “FSL definition” - see [here](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/topup/Faq#How_do_I_know_what_phase-encode_vectors_to_put_into_my_--datain_text_file.3F) and [here](https://lcni.uoregon.edu/kb-articles/kb-0003) how to calculate it. For example
+The phase-encoding polarity (PEpolar) technique combines two or more Spin Echo EPI scans with different phase encoding directions to estimate the underlying inhomogeneity/deformation map. Examples of tools using this kind of images are FSL TOPUP, AFNI 3dqwarp and SPM. In such a case, the phase encoding direction is specified in the corresponding JSON file as one of: “i”, “j”, “k”, “i-”, “j-, “k-”. For these differentially phase encoded sequences, one also needs to specify the Total Readout Time defined as the time (in seconds) from the center of the first echo to the center of the last echo (aka “FSL definition” - see [here](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/topup/Faq#How_do_I_know_what_phase-encode_vectors_to_put_into_my_--datain_text_file.3F) and [here](https://lcni.uoregon.edu/kb-articles/kb-0003) how to calculate it). For example
 
 {  
 &nbsp;&nbsp; "PhaseEncodingDirection": "j-",  
@@ -1432,7 +1434,7 @@ For consistency between studies and institutions, we encourage users to extract 
     </tr>
     <tr>
       <td>CogAtlasID</td>
-      <td>RECOMMENDED. URL of the corresponding Cognitive Atlas term that describes the task (e.g. Resting State with eyes closed "[http://www.cognitiveatlas.org/term/id/trm_54e69c642d89b](http://www.cognitiveatlas.org/term/id/trm_54e69c642d89b)")</td>
+      <td>RECOMMENDED. URL of the corresponding Cognitive Atlas term that describes the task (e.g. Resting State with eyes closed "http://www.cognitiveatlas.org/term/id/trm_54e69c642d89b")</td>
     </tr>
     <tr>
       <td>CogPOID</td>
@@ -1551,7 +1553,7 @@ SHOULD be present
     </tr>
     <tr>
       <td>AssociatedEmptyRoom</td>
-      <td>RECOMMENDED. Relative path in BIDS folder structure to empty-room file associated with the subject’s MEG recording. The path needs to use forward slashes instead of backward slashes (e.g. "sub-emptyroom/ses-&lt;label&gt;/meg/sub-emptyroom\_ses-&lt;label&gt;\_task-noise\_run-&lt;label&gt;\_meg.ds").</td>
+      <td>RECOMMENDED. Relative path in BIDS folder structure to empty-room file associated with the subject’s MEG recording. The path needs to use forward slashes instead of backward slashes (e.g. "sub-emptyroom/ses-&lt;label&gt;/meg/sub-emptyroom_ses-&lt;label&gt;_task-noise_run-&lt;label&gt;_meg.ds").</td>
     </tr>
   </tbody>
 </table>
@@ -1589,7 +1591,7 @@ By construct, EEG when recorded simultaneously with the same MEG system , should
 Example:  
 {  
 &nbsp;&nbsp; "InstitutionName": "Stanford University",  
-&nbsp;&nbsp; "InstitutionAddress: "450 Serra Mall, Stanford, CA 94305-2004, USA",  
+&nbsp;&nbsp; "InstitutionAddress": "450 Serra Mall, Stanford, CA 94305-2004, USA",  
 &nbsp;&nbsp; "Manufacturer": "CTF",  
 &nbsp;&nbsp; "ManufacturersModelName": "CTF-275",  
 &nbsp;&nbsp; "DeviceSerialNumber": "11035",  
@@ -1614,8 +1616,9 @@ Example:
 &nbsp;&nbsp; "HeadCoilFrequency": [1470,1530,1590],  
 &nbsp;&nbsp; "DigitizedLandmarks": true,  
 &nbsp;&nbsp; "DigitizedHeadPoints": true  
+}
 
-Note that the date and time information SHOULD be stored in the Study key file (scans.tsv), see section 8.8. Scans.tsv. As it is indicated there, date time information MUST be expressed in the following format YYYY-MM-DDThh:mm:ss [ISO8601](https://en.wikipedia.org/wiki/ISO_8601) date-time format). For example: 2009-06-15T13:45:30. It does not need to be fully detailed, depending on local REB/IRB ethics board policy.
+Note that the date and time information SHOULD be stored in the Study key file (scans.tsv), see section 8.8. Scans.tsv. As it is indicated there, date time information MUST be expressed in the following format YYYY-MM-DDThh:mm:ss ([ISO8601](https://en.wikipedia.org/wiki/ISO_8601) date-time format). For example: 2009-06-15T13:45:30. It does not need to be fully detailed, depending on local REB/IRB ethics board policy.
 
 ### 8.4.2 Channels description table (\*\_channels.tsv)
 Template:  
@@ -1768,7 +1771,7 @@ Restricted keyword list for field **type**
 -   AUDIO:                Audio signal  
 -   PD:                   Photodiode  
 -   EYEGAZE:              Eye Tracker gaze  
--   PUPIL                 Eye Tracker pupil diameter  
+-   PUPIL:                Eye Tracker pupil diameter  
 -   MISC:                 Miscellaneous  
 -   SYSCLOCK:             System time showing elapsed time since trial started  
 -   ADC:                  Analog to Digital input  
@@ -1887,7 +1890,7 @@ Digitized head points:
   <tbody>
     <tr>
       <td>DigitizedHeadPoints</td>
-      <td>OPTIONAL. Relative path to the file containing the locations of digitized head points collected during the session (e.g., "sub-01\_headshape.pos"). RECOMMENDED for all MEG systems, especially for CTF and 4D/BTi. For Elekta/Neuromag the head points will be stored in the fif file.</td>
+      <td>OPTIONAL. Relative path to the file containing the locations of digitized head points collected during the session (e.g., "sub-01_headshape.pos"). RECOMMENDED for all MEG systems, especially for CTF and 4D/BTi. For Elekta/Neuromag the head points will be stored in the fif file.</td>
     </tr>
     <tr>
       <td>DigitizedHeadPointsCoordinateSystem</td>
@@ -1934,10 +1937,6 @@ Digitized head points:
     <tr>
       <td>AnatomicalLandmarkCoordinateSystemDescription</td>
       <td>OPTIONAL. Freeform text description or link to document describing the Head Coil coordinate system system in detail.</td>
-    </tr>
-    <tr>
-      <td>TermURL</td>
-      <td>URL pointing to a formal definition of this type of data in an ontology available on the web.</td>
     </tr>  
   </tbody>
 </table>
@@ -2017,7 +2016,7 @@ TaskName in the \*\_meg.json file should be set to “noise”.
 -------------------
 
 Template:  
-sub-&lt;participant\_label&gt;/[ses-&lt;label&gt;]  
+sub-&lt;participant\_label&gt;/[ses-&lt;session\_label&gt;]  
 > func/  
 >> &lt;matches&gt;\_events.tsv  
 >> &lt;matches&gt;\_events.json  
@@ -2082,14 +2081,14 @@ sub-control01/
       <td>0.6</td>
       <td>go</td>
       <td>1.435</td>
-      <td>images/red\_square.jpg</td>
+      <td>images/red_square.jpg</td>
     </tr>
     <tr>
       <td>5.6</td>
       <td>0.6</td>
       <td>stop</td>
       <td>1.739</td>
-      <td>images/blue\_square.jpg</td>
+      <td>images/blue_square.jpg</td>
     </tr>   
   </tbody>
 </table>
@@ -2301,11 +2300,11 @@ Additional fields can include external behavioural measures relevant to the scan
       <td>acq_time</td>
     </tr>
     <tr>
-      <td>func/sub-control01\_task-nback\_bold.nii.gz</td>
+      <td>func/sub-control01_task-nback_bold.nii.gz</td>
       <td>1877-06-15T13:45:30</td>
     </tr>
     <tr>
-      <td>func/sub-control01\_task-motor\_bold.nii.gz</td>
+      <td>func/sub-control01_task-motor_bold.nii.gz</td>
       <td>1877-06-15T13:55:33</td>
     </tr>  
   </tbody>
@@ -2330,7 +2329,7 @@ The purpose of this file is to describe properties of participants such as age, 
 <table>
   <tbody>
     <tr>
-      <td>participant\_id</td>
+      <td>participant_id</td>
       <td>age</td>
       <td>sex</td>
       <td>group</td>
@@ -2490,7 +2489,7 @@ Alternatively you can combine data from all sites into one dataset. To identify 
 11 Appendix I: Contributors
 =============================================
 
-Legend (source: [https://github.com/kentcdodds/all-contributors](https://github.com/kentcdodds/all-contributors)
+Legend (source: [https://github.com/kentcdodds/all-contributors](https://github.com/kentcdodds/all-contributors))
 
 <table>
   <tbody>
@@ -2595,7 +2594,7 @@ Vince D. Calhoun 📖
 Alexander L. Cohen 🐛💻📖💬  
 R. Cameron Craddock 📖📢  
 Samir Das 📖  
-Alejandro de la Vega 🐛💻⚠️]  
+Alejandro de la Vega 🐛💻⚠️  
 Eugene P. Duff 📖  
 Elizabeth DuPre 📖💡  
 Eric A. Earl 🤔  
@@ -2673,7 +2672,7 @@ specifications
     <tr>
       <td>PDDL</td>
       <td>Open Data Commons Public Domain Dedication and License</td>
-      <td>License to assign public domain like permissions without giving up the copyright: [http://opendatacommons.org/licenses/pddl/](https://opendatacommons.org/licenses/pddl/)</td>
+      <td>License to assign public domain like permissions without giving up the copyright: http://opendatacommons.org/licenses/pddl/</td>
     </tr>
     <tr>
       <td>CC0</td>
@@ -2908,7 +2907,7 @@ This section compiles the entities (key-value pairs) described throughout this s
     </tr>
     <tr>
       <td>Recording</td>
-      <td>echo-&lt;label&gt;</td>
+      <td>recording-&lt;label&gt;</td>
       <td></td>
       <td></td>
       <td></td>
@@ -3223,8 +3222,8 @@ Submultiples
   </tbody>
 </table>
 
-### 16 Appendix  VI: MEG file formats
-====================================================
+16 Appendix  VI: MEG file formats  
+====================================
 
 Each MEG system brand has specific file organization and data formats.  
 RECOMMENDED values for [manufacturer\_specific\_extensions]:  
@@ -3249,14 +3248,14 @@ CTF’s data storage is therefore via directories containing multiple files. The
 
 Example:
 sub-control01/
-> ses-001/
+> ses-001/  
 >> sub-control01\_ses-001\_scans.tsv  
->> meg/
->>> sub-control01\_ses-001\_coordsystem.json
->>> sub-control01\_ses-001\_headshape.pos
->>> sub-control01\_ses-001\_task-rest\_run-01\_meg.ds
->>> sub-control01\_ses-001\_task-rest\_run-01\_meg.json
->>> sub-control01\_ses-001\_task-rest\_run-01\_channels.tsv
+>> meg/  
+>>> sub-control01\_ses-001\_coordsystem.json  
+>>> sub-control01\_ses-001\_headshape.pos  
+>>> sub-control01\_ses-001\_task-rest\_run-01\_meg.ds  
+>>> sub-control01\_ses-001\_task-rest\_run-01\_meg.json  
+>>> sub-control01\_ses-001\_task-rest\_run-01\_channels.tsv  
 
 To learn more about  CTF’s data organization: [http://www.fieldtriptoolbox.org/getting\_started/ctf](http://www.fieldtriptoolbox.org/getting_started/ctf)
 
@@ -3351,7 +3350,7 @@ Where:
 >> sub-control01\_ses-001\_task-rest\_run-01\_markers.&lt;mrk,sqd&gt;  
 >> sub-control01\_ses-001\_task-rest\_run-01\_meg.&lt;con,sqd&gt;
 
-[More about the KIT/Yokogawa/Ricoh data organization at: [http://www.fieldtriptoolbox.org/getting\_started/yokogawa](http://www.fieldtriptoolbox.org/getting_started/yokogawa)
+More about the KIT/Yokogawa/Ricoh data organization at: [http://www.fieldtriptoolbox.org/getting\_started/yokogawa](http://www.fieldtriptoolbox.org/getting_started/yokogawa)
 
 16.5 KRISS
 --------------------------
@@ -3411,7 +3410,7 @@ Restricted keywords for Manufacturer field in the \*meg.json file:
 -   CTF  
 -   [Elekta/Neuromag](https://docs.google.com/document/d/1FWex_kSPWVh_f4rKgd5rxJmxlboAPtQlmBc1gyZlRZM/edit#heading=h.a7ggx48p7aaf)  
 -   [4D/BTi](https://docs.google.com/document/d/1FWex_kSPWVh_f4rKgd5rxJmxlboAPtQlmBc1gyZlRZM/edit#heading=h.gy0kbzisg1f1)  
--   [KIT/Yokogawa](https://docs.google.com/document/d/1FWex_kSPWVh_f4rKgd5rxJmxlboAPtQlmBc1gyZlRZM/edit#heading=h.2gmmxawyna7r)  
+-   [KIT/Yokogawa/Ricoh](https://docs.google.com/document/d/1FWex_kSPWVh_f4rKgd5rxJmxlboAPtQlmBc1gyZlRZM/edit#heading=h.2gmmxawyna7r)  
 -   KRISS  
 -   [ITAB](https://docs.google.com/document/d/1FWex_kSPWVh_f4rKgd5rxJmxlboAPtQlmBc1gyZlRZM/edit#heading=h.58whib3oq56y)  
 -   Aalto/MEG–MRI  
@@ -3434,7 +3433,7 @@ Restricted keywords for ManufacturersModelName field in the \*meg.json file:
     <tr>
       <td>CTF-151</td>
       <td>CTF</td>
-      <td>[https://www.ctf.com/products](https://www.ctf.com/products)</td>
+      <td>https://www.ctf.com/products</td>
     </tr>
     <tr>
       <td>CTF-275</td>
@@ -3454,7 +3453,7 @@ Restricted keywords for ManufacturersModelName field in the \*meg.json file:
     <tr>
       <td>ElektaTRIUX</td>
       <td>Elekta/Neuromag</td>
-      <td>[https://www.elekta.com/diagnostic-solutions/](https://www.elekta.com/diagnostic-solutions/)</td>
+      <td>https://www.elekta.com/diagnostic-solutions/</td>
     </tr>
     <tr>
       <td>4D-Magnes-WH2500</td>
