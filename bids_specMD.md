@@ -383,98 +383,98 @@ The BIDS specification can be extended in a backwards compatible way  and will e
       <td>Moderators/leads</td>
     </tr>
     <tr>
-      <td>[BEP001](https://docs.google.com/document/d/1QwfHyBzOyFWOLO4u_kkojLpUhW0-4_M7Ubafu9Gf4Gg)</td>
-      <td>[Structural acquisitions that include multiple contrasts (multi echo, flip angle, inversion time) sequences](https://docs.google.com/document/d/1QwfHyBzOyFWOLO4u_kkojLpUhW0-4_M7Ubafu9Gf4Gg)</td>
+      <td><p><a href="https://docs.google.com/document/d/1QwfHyBzOyFWOLO4u_kkojLpUhW0-4_M7Ubafu9Gf4Gg">BEP001</a></p></td>
+      <td><p><a href="https://docs.google.com/document/d/1QwfHyBzOyFWOLO4u_kkojLpUhW0-4_M7Ubafu9Gf4Gg">Structural acquisitions that include multiple contrasts (multi echo, flip angle, inversion time) sequences</a></p></td>
       <td>Gilles de Hollander</td>
     </tr>
     <tr>
-      <td>[BEP002](https://docs.google.com/document/d/1bq5eNDHTb6Nkx3WUiOBgKvLNnaa5OMcGtD0AZ9yms2M)</td>
-      <td>[The BIDS Models Specification](https://docs.google.com/document/d/1bq5eNDHTb6Nkx3WUiOBgKvLNnaa5OMcGtD0AZ9yms2M)</td>
+      <td><p><a href="https://docs.google.com/document/d/1bq5eNDHTb6Nkx3WUiOBgKvLNnaa5OMcGtD0AZ9yms2M">BEP002</a></p></td>
+      <td><p><a href="https://docs.google.com/document/d/1bq5eNDHTb6Nkx3WUiOBgKvLNnaa5OMcGtD0AZ9yms2M">The BIDS Models Specification</a></p></td>
       <td>Tal Yarkoni</td>
     </tr>
     <tr>
-      <td>[BEP003](https://docs.google.com/document/d/1Wwc4A6Mow4ZPPszDIWfCUCRNstn7d_zzaWPcfcHmgI4)</td>
-      <td>[Common Derivatives](https://docs.google.com/document/d/1Wwc4A6Mow4ZPPszDIWfCUCRNstn7d_zzaWPcfcHmgI4)</td>
+      <td><p><a href="https://docs.google.com/document/d/1Wwc4A6Mow4ZPPszDIWfCUCRNstn7d_zzaWPcfcHmgI4">BEP003</a></p></td>
+      <td><p><a href="https://docs.google.com/document/d/1Wwc4A6Mow4ZPPszDIWfCUCRNstn7d_zzaWPcfcHmgI4">Common Derivatives</a></p></td>
       <td>Chris Gorgolewski</td>
     </tr>
     <tr>
-      <td>[BEP004](https://docs.google.com/document/d/1kyw9mGgacNqeMbp4xZet3RnDhcMmf4_BmRgKaOkO2Sc)</td>
-      <td>[Susceptibility Weighted Imaging (SWI)](https://docs.google.com/document/d/1kyw9mGgacNqeMbp4xZet3RnDhcMmf4_BmRgKaOkO2Sc)</td>
+      <td><p><a href="https://docs.google.com/document/d/1kyw9mGgacNqeMbp4xZet3RnDhcMmf4_BmRgKaOkO2Sc">BEP004</a></p></td>
+      <td><p><a href="https://docs.google.com/document/d/1kyw9mGgacNqeMbp4xZet3RnDhcMmf4_BmRgKaOkO2Sc">Susceptibility Weighted Imaging (SWI)</a></p></td>
       <td>Fidel Alfaro Almagro</td>
     </tr>
     <tr>
-      <td>[BEP005](https://docs.google.com/document/d/15tnn5F10KpgHypaQJNNGiNKsni9035GtDqJzWqkkP6c)</td>
-      <td>[[Arterial Spin Labeling (ASL)](https://docs.google.com/document/d/15tnn5F10KpgHypaQJNNGiNKsni9035GtDqJzWqkkP6c)</td>
+      <td><p><a href="https://docs.google.com/document/d/15tnn5F10KpgHypaQJNNGiNKsni9035GtDqJzWqkkP6c">BEP005</a></p></td>
+      <td><p><a href="https://docs.google.com/document/d/15tnn5F10KpgHypaQJNNGiNKsni9035GtDqJzWqkkP6c">Arterial Spin Labeling (ASL)</a></p></td>
       <td>Henk-Jan Mutsaerts and Michael Chappell</td>
     </tr>
     <tr>
-      <td>[BEP006](https://docs.google.com/document/d/1ArMZ9Y_quTKXC-jNXZksnedK2VHHoKP3HCeO5HPcgLE)</td>
-      <td>[Electroencephalography (EEG)](https://docs.google.com/document/d/1ArMZ9Y_quTKXC-jNXZksnedK2VHHoKP3HCeO5HPcgLE)</td>
+      <td><p><a href="https://docs.google.com/document/d/1ArMZ9Y_quTKXC-jNXZksnedK2VHHoKP3HCeO5HPcgLE">BEP006</a></p></td>
+      <td><p><a href="https://docs.google.com/document/d/1ArMZ9Y_quTKXC-jNXZksnedK2VHHoKP3HCeO5HPcgLE">Electroencephalography (EEG)</a></p></td>
       <td>Cyril R Pernet, Robert Oostenveld, Stefan Appelhoff</td>
     </tr>
     <tr>
-      <td>[BEP009](https://docs.google.com/document/d/1mqMLnxVdLwZjDd4ZiWFqjEAmOmfcModA_R535v3eQs0)</td>
-      <td>[Positron Emission Tomography (PET)](https://docs.google.com/document/d/1mqMLnxVdLwZjDd4ZiWFqjEAmOmfcModA_R535v3eQs0)</td>
+      <td><p><a href="https://docs.google.com/document/d/1mqMLnxVdLwZjDd4ZiWFqjEAmOmfcModA_R535v3eQs0">BEP009</a></p></td>
+      <td><p><a href="https://docs.google.com/document/d/1mqMLnxVdLwZjDd4ZiWFqjEAmOmfcModA_R535v3eQs0">Positron Emission Tomography (PET)</a></p></td>
       <td>Melanie Ganz</td>
     </tr>
     <tr>
-      <td>[BEP010](https://docs.google.com/document/d/1qMUkoaXzRMlJuOcfTYNr3fTsrl4SewWjffjMD5Ew6GY)</td>
-      <td>[intracranial Electroencephalography (iEEG)](https://docs.google.com/document/d/1qMUkoaXzRMlJuOcfTYNr3fTsrl4SewWjffjMD5Ew6GY)</td>
+      <td><p><a href="https://docs.google.com/document/d/1qMUkoaXzRMlJuOcfTYNr3fTsrl4SewWjffjMD5Ew6GY">BEP010</a></p></td>
+      <td><p><a href="https://docs.google.com/document/d/1qMUkoaXzRMlJuOcfTYNr3fTsrl4SewWjffjMD5Ew6GY">intracranial Electroencephalography (iEEG)</a></p></td>
       <td>Dora Hermes and Chris Holdgraf</td>
     </tr>
     <tr>
-      <td>[BEP011](https://docs.google.com/document/d/1YG2g4UkEio4t_STIBOqYOwneLEs1emHIXbGKynx7V0Y)</td>
-      <td>[The structural preprocessing derivatives](https://docs.google.com/document/d/1YG2g4UkEio4t_STIBOqYOwneLEs1emHIXbGKynx7V0Y)</td>
+      <td><p><a href="https://docs.google.com/document/d/1YG2g4UkEio4t_STIBOqYOwneLEs1emHIXbGKynx7V0Y">BEP011</a></p></td>
+      <td><p><a href="https://docs.google.com/document/d/1YG2g4UkEio4t_STIBOqYOwneLEs1emHIXbGKynx7V0Y">The structural preprocessing derivatives</a></p></td>
       <td>Andrew Hoopes</td>
     </tr>
     <tr>
-      <td>[BEP012](https://docs.google.com/document/d/16CvBwVMAs0IMhdoKmlmcm3W8254dQmNARo-7HhE-lJU)</td>
-      <td>[The functional preprocessing derivatives](https://docs.google.com/document/d/16CvBwVMAs0IMhdoKmlmcm3W8254dQmNARo-7HhE-lJU)</td>
+      <td><p><a href="https://docs.google.com/document/d/16CvBwVMAs0IMhdoKmlmcm3W8254dQmNARo-7HhE-lJU">BEP012</a></p></td>
+      <td><p><a href="https://docs.google.com/document/d/16CvBwVMAs0IMhdoKmlmcm3W8254dQmNARo-7HhE-lJU">The functional preprocessing derivatives</a></p></td>
       <td>Camille Maumet and Chris Markiewicz</td>
     </tr>
     <tr>
-      <td>[BEP013](https://docs.google.com/document/d/1qBNQimDx6CuvHjbDvuFyBIrf2WRFUOJ-u50canWjjaw)</td>
-      <td>[The resting state fMRI derivatives](https://docs.google.com/document/d/1qBNQimDx6CuvHjbDvuFyBIrf2WRFUOJ-u50canWjjaw)</td>
+      <td><p><a href="https://docs.google.com/document/d/1qBNQimDx6CuvHjbDvuFyBIrf2WRFUOJ-u50canWjjaw">BEP013</a></p></td>
+      <td><p><a href="https://docs.google.com/document/d/1qBNQimDx6CuvHjbDvuFyBIrf2WRFUOJ-u50canWjjaw">The resting state fMRI derivatives</a></p></td>
       <td>Steven Giavasis</td>
     </tr>
     <tr>
-      <td>[BEP014](https://docs.google.com/document/d/11gCzXOPUbYyuQx8fErtMO9tnOKC3kTWiL9axWkkILNE)</td>
-      <td>[The affine transformations and nonlinear field warps](https://docs.google.com/document/d/11gCzXOPUbYyuQx8fErtMO9tnOKC3kTWiL9axWkkILNE)</td>
+      <td><p><a href="https://docs.google.com/document/d/11gCzXOPUbYyuQx8fErtMO9tnOKC3kTWiL9axWkkILNE">BEP014</a></p></td>
+      <td><p><a href="https://docs.google.com/document/d/11gCzXOPUbYyuQx8fErtMO9tnOKC3kTWiL9axWkkILNE">The affine transformations and nonlinear field warps</a></p></td>
       <td>Oscar Esteban</td>
     </tr>
     <tr>
-      <td>[BEP015](https://docs.google.com/document/d/1WYOTXDB7GzlHoWqLjd45I3uGBgPxXddST-NTqBnroJE)</td>
-      <td>[Mapping file](https://docs.google.com/document/d/1WYOTXDB7GzlHoWqLjd45I3uGBgPxXddST-NTqBnroJE)</td>
+      <td><p><a href="https://docs.google.com/document/d/1WYOTXDB7GzlHoWqLjd45I3uGBgPxXddST-NTqBnroJE">BEP015</a></p></td>
+      <td><p><a href="https://docs.google.com/document/d/1WYOTXDB7GzlHoWqLjd45I3uGBgPxXddST-NTqBnroJE">Mapping file</a></p></td>
       <td>Eric Earl, Camille Maumet, and Vasudev Raguram</td>
     </tr>
     <tr>
-      <td>[BEP016](https://docs.google.com/document/d/1cQYBvToU7tUEtWMLMwXUCB_T8gebCotE1OczUpMYW60)</td>
-      <td>[The diffusion weighted imaging derivatives](https://docs.google.com/document/d/1cQYBvToU7tUEtWMLMwXUCB_T8gebCotE1OczUpMYW60)</td>
+      <td><p><a href="https://docs.google.com/document/d/1cQYBvToU7tUEtWMLMwXUCB_T8gebCotE1OczUpMYW60">BEP016</a></p></td>
+      <td><p><a href="https://docs.google.com/document/d/1cQYBvToU7tUEtWMLMwXUCB_T8gebCotE1OczUpMYW60">The diffusion weighted imaging derivatives</a></p></td>
       <td>Franco Pestilli and Oscar Esteban</td>
     </tr>
     <tr>
-      <td>[BEP017](https://docs.google.com/document/d/1ugBdUF6dhElXdj3u9vw0iWjE6f_Bibsro3ah7sRV0GA)</td>
-      <td>[Generic BIDS connectivity data schema](https://docs.google.com/document/d/1ugBdUF6dhElXdj3u9vw0iWjE6f_Bibsro3ah7sRV0GA)</td>
+      <td><p><a href="https://docs.google.com/document/d/1ugBdUF6dhElXdj3u9vw0iWjE6f_Bibsro3ah7sRV0GA">BEP017</a></p></td>
+      <td><p><a href="https://docs.google.com/document/d/1ugBdUF6dhElXdj3u9vw0iWjE6f_Bibsro3ah7sRV0GA">Generic BIDS connectivity data schema</a></p></td>
       <td>Eugene Duff and Paul McCarthy</td>
     </tr>
     <tr>
-      <td>[BEP018](https://docs.google.com/document/d/1uRkgyzESLKuGjXi98Z97Wh6vt-iLN5nOAb9TG16CjUs)</td>
-      <td>[Genetic information](https://docs.google.com/document/d/1uRkgyzESLKuGjXi98Z97Wh6vt-iLN5nOAb9TG16CjUs)</td>
+      <td><p><a href="https://docs.google.com/document/d/1uRkgyzESLKuGjXi98Z97Wh6vt-iLN5nOAb9TG16CjUs">BEP018</a></p></td>
+      <td><p><a href="https://docs.google.com/document/d/1uRkgyzESLKuGjXi98Z97Wh6vt-iLN5nOAb9TG16CjUs">Genetic information</a></p></td>
       <td>Cyril R Pernet, Clara Moreau, and Thomas Nichols</td>
     </tr>
     <tr>
-      <td>[BEP019](https://docs.google.com/document/d/1FqJI791ycXr0bfRg2qyLqAf0RpVttJ2cInOgMWrKsNU)</td>
-      <td>[DICOM Metadata](https://docs.google.com/document/d/1FqJI791ycXr0bfRg2qyLqAf0RpVttJ2cInOgMWrKsNU)</td>
+      <td><p><a href="https://docs.google.com/document/d/1FqJI791ycXr0bfRg2qyLqAf0RpVttJ2cInOgMWrKsNU">BEP019</a></p></td>
+      <td><p><a href="https://docs.google.com/document/d/1FqJI791ycXr0bfRg2qyLqAf0RpVttJ2cInOgMWrKsNU">DICOM Metadata</a></p></td>
       <td>Satrajit Ghosh</td>
     </tr>
     <tr>
-      <td>[BEP020](https://docs.google.com/document/d/1eggzTCzSHG3AEKhtnEDbcdk-2avXN6I94X8aUPEBVsw)</td>
-      <td>[Eye Tracking including Gaze Position and Pupil Size(ET)](https://docs.google.com/document/d/1eggzTCzSHG3AEKhtnEDbcdk-2avXN6I94X8aUPEBVsw)</td>
+      <td><p><a href="https://docs.google.com/document/d/1eggzTCzSHG3AEKhtnEDbcdk-2avXN6I94X8aUPEBVsw">BEP020</a></p></td>
+      <td><p><a href="https://docs.google.com/document/d/1eggzTCzSHG3AEKhtnEDbcdk-2avXN6I94X8aUPEBVsw">Eye Tracking including Gaze Position and Pupil Size(ET)</a></p></td>
       <td>Benjamin Gagl and Dejan Draschkow</td>
     </tr>
     <tr>
-      <td>[BEP021](https://docs.google.com/document/d/1PmcVs7vg7Th-cGC-UrX8rAhKUHIzOI-uIOh69_mvdlw)</td>
-      <td>[Common Electrophysiological Derivatives](https://docs.google.com/document/d/1PmcVs7vg7Th-cGC-UrX8rAhKUHIzOI-uIOh69_mvdlw)</td>
+      <td><p><a href="https://docs.google.com/document/d/1PmcVs7vg7Th-cGC-UrX8rAhKUHIzOI-uIOh69_mvdlw">BEP021</a></p></td>
+      <td><p><a href="https://docs.google.com/document/d/1PmcVs7vg7Th-cGC-UrX8rAhKUHIzOI-uIOh69_mvdlw">Common Electrophysiological Derivatives</a></p></td>
       <td>Stefan Appelhoff, Cyril Pernet, Robert Oostenveld, Teon Brooks</td>
     </tr>      
   </tbody>
@@ -1197,11 +1197,11 @@ Other RECOMMENDED metadata
     </tr>
     <tr>
       <td>CogAtlasID</td>
-      <td>RECOMMENDED. URL of the corresponding [Cognitive Atlas](http://www.cognitiveatlas.org/) Task term.</td>
+      <td>RECOMMENDED. URL of the corresponding <p><a href="http://www.cognitiveatlas.org/">Cognitive Atlas</a></p> Task term.</td>
     </tr>
     <tr>
       <td>CogPOID</td>
-      <td>RECOMMENDED. URL of the corresponding [CogPO](http://www.cogpo.org/) term.</td>
+      <td>RECOMMENDED. URL of the corresponding <p><a href="http://www.cogpo.org/">CogPO</a></p> term.</td>
     </tr>
   </tbody>
 </table>
@@ -1434,11 +1434,11 @@ For consistency between studies and institutions, we encourage users to extract 
     </tr>
     <tr>
       <td>CogAtlasID</td>
-      <td>RECOMMENDED. URL of the corresponding Cognitive Atlas term that describes the task (e.g. Resting State with eyes closed "http://www.cognitiveatlas.org/term/id/trm_54e69c642d89b")</td>
+      <td>RECOMMENDED. URL of the corresponding <p><a href="http://www.cognitiveatlas.org/">Cognitive Atlas</a></p> term that describes the task (e.g. Resting State with eyes closed "http://www.cognitiveatlas.org/term/id/trm_54e69c642d89b")</td>
     </tr>
     <tr>
       <td>CogPOID</td>
-      <td>RECOMMENDED. URL of the corresponding [CogPO](http://www.cogpo.org/) term that describes the task  (e.g. Rest “http://wiki.cogpo.org/index.php?title=Rest”)</td>
+      <td>RECOMMENDED. URL of the corresponding <p><a href="http://www.cogpo.org/">CogPO</a></p> term that describes the task  (e.g. Rest “http://wiki.cogpo.org/index.php?title=Rest”)</td>
     </tr>
     <tr>
       <td>DeviceSerialNumber</td>
@@ -2677,7 +2677,7 @@ specifications
     <tr>
       <td>CC0</td>
       <td>Creative Commons Zero 1.0 Universal.</td>
-      <td>Use this if you are a holder of copyright or database rights, and you wish to waive all your interests in your work worldwide: [https://creativecommons.org/about/cc0](https://creativecommons.org/share-your-work/public-domain/cc0)</td>
+      <td>Use this if you are a holder of copyright or database rights, and you wish to waive all your interests in your work worldwide: https://creativecommons.org/about/cc0</td>
     </tr>
   </tbody>
 </table>
@@ -3108,52 +3108,52 @@ Multiples
       <th>Factor</th>
     </tr>
     <tr>
-      <td>[deca](https://www.wikiwand.com/en/Deca-)</td>
+      <td><p><a href="https://www.wikiwand.com/en/Deca-">deca</a></p></td>
       <td>da</td>
       <td>10<sup>1</sup></td>
     </tr>
     <tr>
-      <td>[hecto](https://www.wikiwand.com/en/Hecto-)</td>
+      <td><p><a href="https://www.wikiwand.com/en/Hecto-">hecto</a></p></td>
       <td>h</td>
       <td>10<sup>2</sup></td>
     </tr>
     <tr>
-      <td>[kilo](https://www.wikiwand.com/en/Kilo-)</td>
+      <td><p><a href="https://www.wikiwand.com/en/Kilo-">kilo</a></p></td>
       <td>k</td>
       <td>10<sup>3</sup></td>
     </tr>
     <tr>
-      <td>[mega](https://www.wikiwand.com/en/Mega-)</td>
+      <td><p><a href="https://www.wikiwand.com/en/Mega-">mega</a></p></td>
       <td>M</td>
       <td>10<sup>6</sup></td>
     </tr>
     <tr>
-      <td>[giga](https://www.wikiwand.com/en/Giga-)</td>
+      <td><p><a href="https://www.wikiwand.com/en/Giga-">giga</a></p></td>
       <td>G</td>
       <td>10<sup>9</sup></td>
     </tr>
     <tr>
-      <td>[tera](https://www.wikiwand.com/en/Tera-)</td>
+      <td><p><a href="https://www.wikiwand.com/en/Tera-">tera</a></p></td>
       <td>T</td>
       <td>10<sup>12</sup></td>
     </tr>
     <tr>
-      <td>[peta](https://www.wikiwand.com/en/Peta-)</td>
+      <td><p><a href="https://www.wikiwand.com/en/Peta-">peta</a></p></td>
       <td>P</td>
       <td>10<sup>15</sup></td>
     </tr>
     <tr>
-      <td>[exa](https://www.wikiwand.com/en/Exa-)</td>
+      <td><p><a href="https://www.wikiwand.com/en/Exa-">exa</a></p></td>
       <td>E</td>
       <td>10<sup>18</sup></td>
     </tr>
     <tr>
-      <td>[zetta](https://www.wikiwand.com/en/Zetta-)</td>
+      <td><p><a href="https://www.wikiwand.com/en/Zetta-">zetta</a></p></td>
       <td>Z</td>
       <td>10<sup>21</sup></td>
     </tr>
     <tr>
-      <td>[yotta](https://www.wikiwand.com/en/Yotta-)</td>
+      <td><p><a href="https://www.wikiwand.com/en/Yotta-">yotta</a></p></td>
       <td>Y</td>
       <td>10<sup>24</sup></td>
     </tr>  
@@ -3170,52 +3170,52 @@ Submultiples
       <th>Factor</th>
     </tr>
     <tr>
-      <td>[deci](https://www.wikiwand.com/en/Deci-)</td>
+      <td><p><a href="https://www.wikiwand.com/en/Deci-">deci</a></p></td>
       <td>d</td>
       <td>10<sup>-1</sup></td>
     </tr>
     <tr>
-      <td>[centi](https://www.wikiwand.com/en/Centi-)</td>
+      <td><p><a href="https://www.wikiwand.com/en/Centi-">centi</a></p></td>
       <td>c</td>
       <td>10<sup>-2</sup></td>
     </tr>
     <tr>
-      <td>[milli](https://www.wikiwand.com/en/Milli-)</td>
+      <td><p><a href="https://www.wikiwand.com/en/Milli-">milli</a></p></td>
       <td>m</td>
       <td>10<sup>-3</sup></td>
     </tr>
     <tr>
-      <td>[micro](https://www.wikiwand.com/en/Micro-)</td>
+      <td><p><a href="https://www.wikiwand.com/en/Micro-">micro</a></p></td>
       <td>μ</td>
       <td>10<sup>-6</sup></td>
     </tr>
     <tr>
-      <td>[nano](https://www.wikiwand.com/en/Nano-)</td>
+      <td><p><a href="https://www.wikiwand.com/en/Nano-">nano</a></p></td>
       <td>n</td>
       <td>10<sup>-9</sup></td>
     </tr>
     <tr>
-      <td>[pico](https://www.wikiwand.com/en/Pico-)</td>
+      <td><p><a href="https://www.wikiwand.com/en/Pico-">pico</a></p></td>
       <td>p</td>
       <td>10<sup>-12</sup></td>
     </tr>
     <tr>
-      <td>[femto](https://www.wikiwand.com/en/Femto-)</td>
+      <td><p><a href="https://www.wikiwand.com/en/Femto-">femto</a></p></td>
       <td>f</td>
       <td>10<sup>-15</sup></td>
     </tr>
     <tr>
-      <td>[atto](https://www.wikiwand.com/en/Atto-)</td>
+      <td><p><a href="https://www.wikiwand.com/en/Atto-">atto</a></p></td>
       <td>a</td>
       <td>10<sup>-18</sup></td>
     </tr>
     <tr>
-      <td>[zepto](https://www.wikiwand.com/en/Zepto-)</td>
+      <td><p><a href="https://www.wikiwand.com/en/Zepto-">zepto</a></p></td>
       <td>z</td>
       <td>10<sup>-21</sup></td>
     </tr>
     <tr>
-      <td>[yocto](https://www.wikiwand.com/en/Yocto-)</td>
+      <td><p><a href="https://www.wikiwand.com/en/Yocto-">yocto</a></p></td>
       <td>y</td>
       <td>10<sup>-24</sup></td>
     </tr>  
