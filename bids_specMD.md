@@ -1197,11 +1197,11 @@ Other RECOMMENDED metadata
     </tr>
     <tr>
       <td>CogAtlasID</td>
-      <td>RECOMMENDED. URL of the corresponding <p><a href="http://www.cognitiveatlas.org/">Cognitive Atlas</a></p> Task term.</td>
+      <td>RECOMMENDED. URL of the corresponding <p><a href="http://www.cognitiveatlas.org/">Cognitive Atlas</a></p>Task term.</td>
     </tr>
     <tr>
       <td>CogPOID</td>
-      <td>RECOMMENDED. URL of the corresponding <p><a href="http://www.cogpo.org/">CogPO</a></p> term.</td>
+      <td>RECOMMENDED. URL of the corresponding <p><a href="http://www.cogpo.org/">CogPO</a></p>term.</td>
     </tr>
   </tbody>
 </table>
